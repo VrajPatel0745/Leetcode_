@@ -20,5 +20,7 @@ int main() {
     Solution solution;
     vector<int> nums = {3, 0, 1};
     cout << "Missing number: " << solution.missingNumber(nums) << endl; // Output: 2
+    vector<int> nums1 = {3, 0, 1,5,4,6,8,9,7};
+     cout << "Missing number: " << solution.missingNumber(nums1) << endl; // Output: 2
     return 0;
 }
