@@ -30,10 +30,20 @@ public:
         countNodesHelper(node->right, count);
     }
 };
+// Example usage
 int main()
 {
+    // Create a simple binary tree
+    TreeNode *root = new TreeNode(1);
+    root->left = new TreeNode(2);
+    root->right = new TreeNode(3);
+    root->left->left = new TreeNode(4);
+    root->left->right = new TreeNode(5);
+
     Solution solution;
-    TreeNode *root = new TreeNode(1, new TreeNode(2), new TreeNode(3));
-    cout << solution.countNodes(root) << endl; // Output: 3
+    int nodeCount = solution.countNodes(root);
+    cout << "Number of nodes in the binary tree: " << nodeCount << endl;
+
+    // Clean up memory (not shown here for brevity)
     return 0;
 }
